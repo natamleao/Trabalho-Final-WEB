@@ -4,7 +4,7 @@
 
 </div>
 
-![Página inicial do site](https://i.imgur.com/FdIszKB.png)
+![Página inicial do site](https://i.imgur.com/qjlxua8.png)
 
 > [!NOTE]
 > Este projeto é um exemplo de um site informativo sobre a dengue, nele o usuário poderá se cadastrar, ver informações sobre a dengue, incluindo formas de prevenção e cuidados, também poderá ver um mapa de focos do mosquito.
@@ -19,6 +19,8 @@ Esta funcionalidade permite ao usuário se cadastrar no site.
 ### 2. Login
 Esta funcionalidade permite ao usuário entrar no site.
 
+![Página de login/cadastro do site](https://i.imgur.com/vTKnRED.png)
+
 ### 3. Informações gerais
 Clicando aqui o usuário poderá ver várias informações sobre a dengue.
 
@@ -28,10 +30,10 @@ Clicando aqui o usuário poderá ver o mapa de focos.
 ### 5. Redefinir senha
 Nesta funcionalidade o usuário poderá redefinir sua senha de usuário.
 
+![Página de redefinição de senha](https://i.imgur.com/dfLAiWC.png)
+
 ### 6. Alterar foto de perfil
 Ao passar o cursor sobre a foto de perfil aparcerá um botão de edição, clicando nele o usuário poderá alterar sua foto de perfil.
-
-![Página de login/cadastro do site](https://i.imgur.com/MXCZoEG.png)
 
 </div>
 
