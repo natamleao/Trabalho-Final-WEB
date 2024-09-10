@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entrar ou Registrar</title>
+        <link href="../css/styles.css" rel="stylesheet">
+        <link href="../css/login-register.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="profile">
+            <div class="profile-image-container">
+                <img id="profile-image" src="../img/default-image.webp" alt="Imagem do Perfil">
+                <div class="edit-icon" id="edit-icon">
+                    <i class='bx bx-edit'></i> Editar
+                </div>
+            </div>
+    
+            <input type="file" id="file-input" accept="image/*" class="hidden">
+            <button id="upload-button" class="hidden">Enviar Imagem</button>
+        
+            <div class="profile-name">
+                <h2><a href="nome.html">Nome da Pessoa</h2>
+            </div>
+        
+            <div class="general-info">
+                <h3><a href="informacoes-gerais.html">Informações Gerais</a></h3>
+            </div>
+        
+            <div class="login-signup">
+                <h3><a href="login-cadastro.html">Entrar/Cadastrar</a></h3>
+            </div>
+        
+            <div class="risk-areas">
+                <h3><a href="areas-de-risco.html">Áreas de Risco</a></h3>
+            </div>
+
+            <div class="return">
+                <a href="../html/index.html"><i class='bx bx-upload'></i></a>
+            </div>
+        </div>
+             
+        <div class="container">
+            <div class="wrapper"> 
+                <form id="access-form" action="">
+                    <h1>Entrar</h1>
+                    <div class="input-box">
+                        <input type="email" id="email" placeholder="E-mail" required>
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="Senha" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                
+                    <div class="remeber-forgot">
+                        <label><input type="checkbox" id="checkbox"> Lembre de mim</label>
+                        <a href="../html/reset-password.html">Esqueceu sua senha?</a>
+                    </div>
+                
+                    <button type="submit" class="btn">Login</button>
+    
+                </form>
+            </div>
+    
+            <div class="wrapper">
+                <form id="signup-form" action="">
+                    <h1>Cadastrar</h1>
+                    <div class="input-box">
+                        <input type="email" id="email" placeholder="E-mail" required>
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="Senha" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                
+                    <div class="remeber-forgot">
+                        <label><input type="checkbox" required> Aceito os termos</label>
+                    </div>
+                
+                    <button type="submit" class="btn">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+        
+        <script src="../js/signup.js"></script>
+        <script src="../js/login.js"></script>
+        <script src="../js/change-image.js"></script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial</title>
+        <link href="../css/styles.css" rel="stylesheet">
+        <link href="../css/initial-page.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body> 
+        <div class="profile">
+            <div class="profile-image-container">
+                <img id="profile-image" src="../img/default-image.webp" alt="Imagem do Perfil">
+                <div class="edit-icon" id="edit-icon">
+                    <i class='bx bx-edit'></i> Editar
+                </div>
+            </div>
+    
+            <input type="file" id="file-input" accept="image/*" class="hidden">
+            <button id="upload-button" class="hidden">Enviar Imagem</button>
+
+            <div class="profile-name">
+                <h2><a href="nome.html">Nome da Pessoa</a></h2>
+            </div>
+        
+            <div class="general-info">
+                <h3><a href="informacoes-gerais.html">Informações Gerais</a></h3>
+            </div>
+        
+            <div class="login-signup">
+                <h3><a href="../html/login-register.html">Entrar/Cadastrar</a></h3>
+            </div>
+        
+            <div class="risk-areas">
+                <h3><a href="areas-de-risco.html">Áreas de Risco</a></h3>
+            </div>
+        </div>
+             
+        <div class="image">
+            <img src="../img/Aedes-Aegypti.png" alt="Uma mira vermelha em um mosquito Aedes Aegypti">
+        </div>
+
+        <script src="../js/change-image.js"></script>
+    </body>
+</html>

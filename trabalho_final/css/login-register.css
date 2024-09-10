@@ -1,0 +1,138 @@
+/* Estilo para o contêiner que organiza os formulários lado a lado */
+.container {
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: space-between; /* Espaça as divs igualmente */
+    gap: 130px; /* Espaço entre as duas divs */
+    max-width: 900px; /* Define a largura máxima do contêiner */
+    margin-left: auto; /* Empurra o contêiner para a direita */
+    margin-right: 80px; /* Define a margem direita */
+}
+
+/* Estilo para os contêineres individuais dos formulários */
+.wrapper {
+    width: 390px; /* Define a largura da div */
+    height: 360px; /* Define a altura da div */
+    background: #fff; /* Define a cor de fundo */
+    border: 1px solid #A9A9A9; /* Adiciona uma borda cinza ao redor da div */
+    backdrop-filter: blur(20px); /* Adiciona um desfoque ao fundo */
+    box-shadow: 0 0 10px #A9A9A9; /* Adiciona uma sombra ao redor da div */
+    color: #000; /* Define a cor do texto */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    padding: 30px 40px; /* Adiciona preenchimento interno */
+}
+
+/* Estilo para o título dentro dos wrappers */
+.wrapper h1 {
+    font-size: 36px; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo para as caixas de entrada */
+.wrapper .input-box {
+    position: relative; /* Permite o posicionamento absoluto dos ícones dentro */
+    width: 100%; /* Define a largura da caixa de entrada */
+    height: 50px; /* Define a altura da caixa de entrada */
+    margin: 30px 0; /* Espaçamento acima e abaixo da caixa de entrada */
+}
+
+/* Estilo para os campos de entrada */
+.input-box input {
+    width: 100%; /* Define a largura total da entrada */
+    height: 100%; /* Define a altura total da entrada */
+    background: transparent; /* Define o fundo como transparente */
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove a borda de foco padrão */
+    border: 1px solid #A9A9A9; /* Adiciona uma borda cinza ao redor da entrada */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #000; /* Define a cor do texto */
+    padding: 20px 40px 20px 20px; /* Adiciona preenchimento interno */
+}
+
+/* Estilo para os placeholders nos campos de entrada */
+.input-box input::placeholder {
+    color: #000; /* Define a cor do texto do placeholder */
+}
+
+/* Estilo para os ícones dentro das caixas de entrada */
+.input-box i {
+    position: absolute; /* Posiciona o ícone absolutamente dentro da caixa */
+    right: 20px; /* Alinha o ícone à direita */
+    top: 50%; /* Alinha o ícone verticalmente ao meio */
+    transform: translateY(-50%); /* Ajusta o ícone verticalmente ao centro */
+    font-size: 20px; /* Define o tamanho do ícone */
+}
+
+/* Estilo para a seção de lembrar e esquecer */
+.wrapper .remeber-forgot {
+    display: flex; /* Usa Flexbox para layout */
+    justify-content: space-between; /* Espaça os elementos igualmente */
+    font-size: 14.5px; /* Define o tamanho da fonte */
+    margin: -15px 0 15px; /* Margem negativa superior para reduzir o espaçamento */
+}
+
+/* Estilo para o checkbox na seção de lembrar e esquecer */
+.remeber-forgot label input {
+    accent-color: #000; /* Define a cor do checkbox */
+    margin-right: 3px; /* Espaçamento à direita do checkbox */
+}
+
+/* Estilo para os links na seção de lembrar e esquecer */
+.remeber-forgot a {
+    color: #000; /* Define a cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilo para os links ao passar o mouse sobre eles na seção de lembrar e esquecer */
+.remeber-forgot a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+
+/* Estilo para o botão dentro dos wrappers */
+.wrapper .btn {
+    width: 100%; /* Define a largura total do botão */
+    height: 45px; /* Define a altura do botão */
+    background: #1C1C1C; /* Define a cor de fundo do botão */
+    border: none; /* Remove a borda padrão do botão */
+    outline: none; /* Remove a borda de foco padrão do botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* Adiciona uma sombra ao redor do botão */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #fff; /* Define a cor do texto no botão */
+    font-weight: 600; /* Define o peso da fonte como negrito */
+}
+
+/* Estilo para o botão ao passar o mouse sobre ele */
+.btn:hover {
+    background-color: #363636; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o link de registro dentro dos wrappers */
+.wrapper .register-link {
+    font-size: 14.5px; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 20px 0 15px; /* Define o espaçamento acima e abaixo do link */
+}
+
+/* Estilo para o botão de retorno fixo no canto inferior esquerdo */
+.return {
+    display: flex; /* Usa Flexbox para layout */
+    position: fixed; /* Fixa o botão em relação à viewport */
+    bottom: 0; /* Alinha o botão ao fundo da viewport */
+    left: 0; /* Alinha o botão ao lado esquerdo da viewport */
+    margin-left: 25px; /* Define a margem esquerda do botão */
+    margin-bottom: 25px; /* Define a margem inferior do botão */
+    padding: 10px; /* Adiciona preenchimento interno */
+    width: 50px; /* Define a largura do botão */
+    height: 50px; /* Define a altura do botão */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    transform: rotate(-90deg) scale(1.5); /* Aplica rotação e escala ao botão */
+}
+
+/* Estilo para o link dentro do botão de retorno */
+.return a {
+    color: #fff; /* Define a cor do texto do link */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+}
