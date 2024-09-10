@@ -8,7 +8,7 @@ const userRoutes = require('./routes/userRoutes'); // Importa as rotas definidas
 require('dotenv').config(); // Carrega variáveis de ambiente de um arquivo .env para a aplicação
 const app = express(); // Cria uma instância da aplicação Express
 const port = 3000; // Define a porta em que o servidor irá escutar
-const uploadDir = path.join(__dirname, 'uploads'); // Define o caminho para o diretório onde os arquivos enviados serão armazenados
+const uploadDir = path.join(__dirname, '../public/uploads'); // Define o caminho para o diretório onde os arquivos enviados serão armazenados
 
 app.use(bodyParser.json()); // Middleware para processar o corpo das requisições no formato JSON
 app.use(bodyParser.urlencoded({ extended: true })); // Middleware para processar o corpo das requisições com dados URL-encoded
@@ -23,9 +23,9 @@ app.use(cors({
 
 // Middleware para adicionar headers de segurança às respostas HTTP
 app.use(helmet({
-    contentSecurityPolicy: true, // Desabilita a política de segurança de conteúdo
-    crossOriginEmbedderPolicy: true, // Desabilita a política de embutimento de recursos cross-origin
-    crossOriginOpenerPolicy: true, // Desabilita a política de abertura cross-origin
+    contentSecurityPolicy: true, // Habilita a política de segurança de conteúdo
+    crossOriginEmbedderPolicy: true, // Habilita a política de embutimento de recursos cross-origin
+    crossOriginOpenerPolicy: true, // Habilita a política de abertura cross-origin
     crossOriginResourcePolicy: false, // Desabilita a política de recursos cross-origin
 }));
 

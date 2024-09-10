@@ -3,7 +3,7 @@ const { signup, login, resetPassword } = require('../controllers/userController'
 const multer = require('multer'); // Importa o multer para lidar com uploads de arquivos
 const path = require('path'); // Importa o módulo path para manipular caminhos de diretórios
 const router = express.Router(); // Cria uma instância do roteador do express para definir rotas
-const uploadDir = path.join(__dirname, '../uploads'); // Define o diretório de uploads, que está localizado na pasta 'uploads' do projeto
+const uploadDir = path.join(__dirname, '../../public/uploads'); // Define o caminho para o diretório onde os arquivos enviados serão armazenados
 const pool = require('../config/db'); // Importa a configuração do banco de dados
 
 // Configuração do multer para armazenar arquivos no diretório de uploads
