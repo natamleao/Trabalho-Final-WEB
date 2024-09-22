@@ -3,27 +3,27 @@
 
 /* Define estilos básicos para todos os elementos */
 * {
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
     box-sizing: border-box; /* Inclui bordas e preenchimento nas dimensões do elemento */
-    font-family: "Poppins", "sans-serif"; /* Define a fonte padrão */
+    font-family: "Poppins", "sans-serif"; /* Define a fonte padrão como Poppins, com sans-serif como alternativa */
 }
 
 /* Estilo para o corpo da página */
 body {
-    display: flex; /* Usa Flexbox para layout */
+    display: flex; /* Usa Flexbox para layout, permitindo centralização fácil */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     min-height: 100vh; /* Define a altura mínima como a altura total da visualização */
-    background: #F3F3F3; /* Define a cor de fundo */
-    background-size: cover; /* Faz com que o fundo cubra toda a área */
-    background-position: center; /* Centraliza o fundo */
+    background: #F3F3F3; /* Define a cor de fundo como um cinza claro */
+    background-size: cover; /* Faz com que o fundo cubra toda a área disponível */
+    background-position: center; /* Centraliza o fundo na tela */
 }
 
 /* Estilo para o contêiner do perfil */
 .profile {
-    width: 300px; /* Define a largura da div como 300 pixels */
-    height: 100vh; /* Define a altura como a altura total da visualização (viewport) */
+    width: 300px; /* Define a largura da div do perfil como 300 pixels */
+    height: 100vh; /* Define a altura da div do perfil como a altura total da visualização */
     position: absolute; /* Posiciona a div absolutamente em relação ao seu contêiner pai */
     left: 0; /* Alinha a div ao lado esquerdo da página */
     text-align: center; /* Alinha o texto ao centro dentro da div */
@@ -80,19 +80,23 @@ body {
 }
 
 /* Estilo para as seções do perfil */
-.general-info, .login-signup, .risk-areas {
+.general-info, .login-signup, .risk-areas, .logout {
     margin: 10px 0; /* Adiciona 10 pixels de espaçamento acima e abaixo de cada seção */
 }
 
 /* Estilo para os links dentro das seções do perfil */
-.profile-name a, .general-info a, .login-signup a, .risk-areas a {
+.profile-name a, .general-info a, .login-signup a, .risk-areas a, .logout a {
     text-decoration: none; /* Remove o sublinhado dos links */
     color: #fff; /* Define a cor do texto dos links como branco */
     font-weight: bold; /* Deixa o texto dos links em negrito */
     font-size: 18px; /* Define o tamanho da fonte dos links como 18 pixels */
 }
 
+.logout {
+    display: none; /* Esconde a seção de logout por padrão */
+}
+
 /* Estilo para os links ao passar o mouse sobre eles */
-.profile-name a:hover, .general-info a:hover, .login-signup a:hover, .risk-areas a:hover {
+.profile-name a:hover, .general-info a:hover, .login-signup a:hover, .risk-areas a:hover, .logout a:hover {
     color: #C0C0C0; /* Muda a cor do texto dos links para cinza claro ao passar o mouse */
 }

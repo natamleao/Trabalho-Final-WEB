@@ -18,7 +18,7 @@ app.use('/uploads', express.static(uploadDir)); // Middleware para servir arquiv
 app.use(cors({
     origin: '*',
     methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type']
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Middleware para adicionar headers de segurança às respostas HTTP

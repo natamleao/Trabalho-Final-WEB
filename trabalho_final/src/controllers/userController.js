@@ -70,6 +70,7 @@ const login = async (req, res) => {
             success: true,
             token,
             profileImageUrl: user.profile_image_url,
+            name: user.email,
             message: 'Login realizado com sucesso!'
         });
     } catch (error) {
@@ -107,7 +108,7 @@ const resetPassword = async (req, res) => {
         console.error('Erro ao redefinir a senha:', error);
         res.status(500).json({ message: 'Erro interno do servidor.' });
     }
-};
+}; 
 
 // Exporta os controladores (signup, login, resetPassword) para serem usados em outras partes do projeto
 module.exports = {

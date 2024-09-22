@@ -114,25 +114,3 @@
     text-align: center; /* Alinha o texto ao centro */
     margin: 20px 0 15px; /* Define o espaçamento acima e abaixo do link */
 }
-
-/* Estilo para o botão de retorno fixo no canto inferior esquerdo */
-.return {
-    display: flex; /* Usa Flexbox para layout */
-    position: fixed; /* Fixa o botão em relação à viewport */
-    bottom: 0; /* Alinha o botão ao fundo da viewport */
-    left: 0; /* Alinha o botão ao lado esquerdo da viewport */
-    margin-left: 25px; /* Define a margem esquerda do botão */
-    margin-bottom: 25px; /* Define a margem inferior do botão */
-    padding: 10px; /* Adiciona preenchimento interno */
-    width: 50px; /* Define a largura do botão */
-    height: 50px; /* Define a altura do botão */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    transform: rotate(-90deg) scale(1.5); /* Aplica rotação e escala ao botão */
-}
-
-/* Estilo para o link dentro do botão de retorno */
-.return a {
-    color: #fff; /* Define a cor do texto do link */
-    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
-}

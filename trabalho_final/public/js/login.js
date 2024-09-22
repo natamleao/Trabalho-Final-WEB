@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Captura o email salvo no localStorage, se existir
     const savedPassword = localStorage.getItem('savedPassword');
     // Captura a senha salva no localStorage, se existir
+    const savedName = localStorage.getItem('savedName');
+    // Captura o nome salvo no localStorage, se existir
+    const savedProfileImageUrl = localStorage.getItem('savedProfileImageUrl'); 
+    // Captura a URL da imagem salva no localStorage, se existir
     const rememberMeCheckbox = form.querySelector('#checkbox');
     // Seleciona o checkbox "Lembre de mim" no formulário
 
@@ -64,25 +68,24 @@ document.addEventListener('DOMContentLoaded', function () {
         // Transforma a resposta do servidor em JSON
         .then(data => {
             if (data.success) {
-                // Se a resposta do servidor indicar sucesso
+                const token = data.token; // Obtenha o token da resposta
+                const userName = email.split('@')[0];
+                // Extrai o nome de usuário do email (parte antes do '@')
+                const profileImageUrl = data.profileImageUrl || '../img/default-image.webp';
+                // Usa a imagem de perfil retornada ou uma imagem padrão
+            
                 if (rememberMe) {
-                    // Se a opção "Lembre de mim" estiver marcada
-                    localStorage.setItem('savedEmail', email);
-                    // Salva o email no localStorage
-                    localStorage.setItem('savedPassword', password);
-                    // Salva a senha no localStorage (não recomendado por questões de segurança)
-                } 
-                else {
-                    // Se "Lembre de mim" não estiver marcado
-                    localStorage.removeItem('savedEmail');
-                    // Remove o email do localStorage
-                    localStorage.removeItem('savedPassword');
-                    // Remove a senha do localStorage
+                    localStorage.setItem('authToken', token); // Armazena o token no localStorage se "Lembre de mim" estiver marcado
+                } else {
+                    sessionStorage.setItem('authToken', token); // Armazena o token apenas na sessão se não estiver marcado
                 }
-                console.log('Login bem-sucedido:', data);
-                // Exibe uma mensagem de sucesso no console
-                window.location.href = 'reset-password.html';
-                // Redireciona o usuário para a página de redefinição de senha
+            
+                // Armazena o nome e a URL da imagem de perfil
+                localStorage.setItem('savedName', userName);
+                localStorage.setItem('savedProfileImageUrl', profileImageUrl);
+            
+                window.location.href = 'index.html';            
+                // Redireciona o usuário para a página principal após o login
             } 
             else {
                 alert(`${data.message}`);
