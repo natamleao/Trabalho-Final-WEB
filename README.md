@@ -53,22 +53,22 @@ Ao passar o cursor sobre a foto de perfil aparcerá um botão de edição, clica
 > 1. Abra o Prompt de Comando e navegue até o diretório `bin` do PostgreSQL, geralmente em `"C:\Program Files\PostgreSQL\<versão>\bin"`.
 > 2. Crie um banco de dados vazio com o comando:
 >    ```cmd
->    createdb -U <username> task_manager
+>    createdb -U <username> system_users
 >    ```
 > 3. Restaure o banco de dados com o comando:
 >    ```cmd
->    psql -U <username> -d task_manager -f "C:\path\to\backup\task_manager.sql"
+>    psql -U <username> -d system_users -f "C:\path\to\backup\system_users.sql"
 >    ```
 > 
 > ### No Linux:
 > 1. Abra um terminal.
 > 2. Crie um banco de dados vazio com o comando:
 >    ```bash
->    createdb -U <username> task_manager
+>    createdb -U <username> system_users
 >    ```
 > 3. Restaure o banco de dados com o comando:
 >    ```bash
->    psql -U <username> -d task_manager -f /caminho/para/task_manager.sql
+>    psql -U <username> -d system_users -f /caminho/para/system_users.sql
 >    ```
 
 > [!WARNING]
@@ -95,7 +95,7 @@ Ao passar o cursor sobre a foto de perfil aparcerá um botão de edição, clica
 >    ```
 > 3. Abra o navegador e acesse o arquivo `index.html` no diretório do projeto. Você pode fazer isso arrastando e soltando o arquivo `index.html` na janela do navegador ou, no diretório `./html`, usando o comando:
 >    ```bash
->    xdg-open index.html
+>    open index.html
 >    ```
 
 > [!NOTE]
