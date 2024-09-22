@@ -1,4 +1,4 @@
-// Adiciona um ouvinte de evento que aguarda o carregamento completo do DOM
+// Adiciona um listener que executa o código quando o DOM da página for completamente carregado
 document.addEventListener('DOMContentLoaded', function () {
     // Seleciona o formulário de cadastro pelo ID 'signup-form'
     const form = document.querySelector('#signup-form'); // Corrigido para usar o ID

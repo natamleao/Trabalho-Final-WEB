@@ -1,5 +1,5 @@
+// Adiciona um listener que executa o código quando o DOM da página for completamente carregado
 document.addEventListener('DOMContentLoaded', function () {
-    // Executa o código quando o DOM da página for completamente carregado
 
     const token = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
     // Obtém o token de autenticação do localStorage ou sessionStorage, se existir

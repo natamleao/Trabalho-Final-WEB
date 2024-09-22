@@ -1,5 +1,5 @@
-const bcrypt = require('bcryptjs');   // Importa o bcrypt para hash de senhas
-const jwt = require('jsonwebtoken');  // Importa o jwt para geração e verificação de tokens JWT
+const bcrypt = require('bcryptjs'); // Importa o bcrypt para hash de senhas   
+const jwt = require('jsonwebtoken'); // Importa o jwt para geração e verificação de tokens JWT 
 const pool = require('../config/db'); // Importa o pool de conexão com o banco de dados
 require('dotenv').config(); // Carrega variáveis de ambiente do arquivo .env
 
@@ -110,9 +110,39 @@ const resetPassword = async (req, res) => {
     }
 }; 
 
-// Exporta os controladores (signup, login, resetPassword) para serem usados em outras partes do projeto
+// Função para fazer upload da imagem de perfil
+const uploadProfileImage = async (req, res) => {
+    // Verifica se um arquivo foi enviado
+    if (!req.file) {
+        return res.status(400).json({ success: false, message: 'Nenhum arquivo enviado.' });
+    }
+
+    // Cria a URL da imagem com base no nome do arquivo enviado
+    const imageUrl = `http://localhost:3000/uploads/${req.file.filename}`;
+    // Usa o ID do usuário (certifique-se de usar o campo correto aqui)
+    const id = req.user.userId; 
+
+    try {
+        // Atualiza a URL da imagem de perfil no banco de dados
+        const result = await pool.query('UPDATE users SET profile_image_url = $1 WHERE id = $2', [imageUrl, id]);
+        
+        // Se nenhum usuário for encontrado, responde com status 404
+        if (result.rowCount === 0) {
+            return res.status(404).json({ success: false, message: 'Usuário não encontrado.' });
+        }
+        
+        // Responde com sucesso e a nova URL da imagem
+        res.json({ success: true, imageUrl });
+    } catch (error) {
+        console.error('Erro ao atualizar a imagem do perfil:', error);
+        res.status(500).json({ success: false, message: 'Erro ao atualizar a imagem do perfil.' });
+    }
+};
+
+// Exporta os controladores (signup, login, resetPassword, uploadProfileImage) para serem usados em outras partes do projeto
 module.exports = {
     signup,
     login,
-    resetPassword
+    resetPassword,
+    uploadProfileImage
 };

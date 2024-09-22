@@ -1,6 +1,6 @@
+// Adiciona um listener que executa o código quando o DOM da página for completamente carregado
 document.addEventListener('DOMContentLoaded', function () {
-    // Executa o código assim que o DOM da página for completamente carregado
-
+    
     const form = document.querySelector('#reset-password');
     // Seleciona o formulário de redefinição de senha pelo ID 'reset-password'
 
