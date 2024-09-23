@@ -1,0 +1,102 @@
+/* Importa a fonte 'Poppins' do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Define estilos básicos para todos os elementos */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimento nas dimensões do elemento */
+    font-family: "Poppins", "sans-serif"; /* Define a fonte padrão como Poppins, com sans-serif como alternativa */
+}
+
+/* Estilo para o corpo da página */
+body {
+    display: flex; /* Usa Flexbox para layout, permitindo centralização fácil */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh; /* Define a altura mínima como a altura total da visualização */
+    background: #F3F3F3; /* Define a cor de fundo como um cinza claro */
+    background-size: cover; /* Faz com que o fundo cubra toda a área disponível */
+    background-position: center; /* Centraliza o fundo na tela */
+}
+
+/* Estilo para o contêiner do perfil */
+.profile {
+    width: 300px; /* Define a largura da div do perfil como 300 pixels */
+    height: 100vh; /* Define a altura da div do perfil como a altura total da visualização */
+    position: absolute; /* Posiciona a div absolutamente em relação ao seu contêiner pai */
+    left: 0; /* Alinha a div ao lado esquerdo da página */
+    text-align: center; /* Alinha o texto ao centro dentro da div */
+    background: #1C1C1C; /* Define a cor de fundo da div como cinza escuro */
+}
+
+/* Estilo para a imagem do perfil */
+.profile-image-container {
+    position: relative; /* Permite posicionar o ícone de edição em relação a este contêiner */
+    display: inline-block; /* Faz com que o contêiner da imagem ocupe apenas o espaço necessário para o conteúdo */
+    margin-bottom: 10px; /* Adiciona 10 pixels de espaçamento abaixo da imagem */
+    margin-top: 50px; /* Adiciona 50 pixels de espaçamento acima da imagem */
+}
+
+/* Estilo para a imagem do perfil, tornando-a circular */
+#profile-image {
+    display: block; /* Remove o espaçamento abaixo da imagem, se houver */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    width: 150px; /* Define a largura da imagem como 150 pixels */
+    height: 150px; /* Define a altura da imagem como 150 pixels */
+    border-radius: 50%; /* Torna a imagem circular com bordas arredondadas */
+    object-fit: cover; /* Ajusta a imagem para cobrir completamente o círculo */
+    border: 1px solid #000; /* Adiciona uma borda preta de 1 pixel ao redor da imagem */
+}
+
+/* Estilo para o ícone de edição */
+.edit-icon {
+    position: absolute; /* Posiciona o ícone de forma absoluta em relação ao contêiner pai */
+    top: 50%; /* Posiciona o ícone verticalmente no meio do contêiner */
+    left: 50%; /* Posiciona o ícone horizontalmente no meio do contêiner */
+    transform: translate(-50%, -50%); /* Ajusta a posição do ícone para que ele fique centralizado */
+    background: rgba(0, 0, 0, 0.5); /* Define um fundo escuro e transparente para o ícone */
+    color: white; /* Define a cor do texto do ícone como branca */
+    border-radius: 50%; /* Faz com que o fundo do ícone seja circular */
+    padding: 10px; /* Adiciona preenchimento ao redor do ícone */
+    cursor: pointer; /* Muda o cursor para um ponteiro quando sobre o ícone */
+    display: none; /* Esconde o ícone por padrão */
+    font-size: 16px; /* Define o tamanho da fonte do ícone */
+}
+
+/* Mostra o ícone de edição quando o mouse passa sobre o contêiner da imagem */
+.profile-image-container:hover .edit-icon {
+    display: block; /* Torna o ícone visível quando o contêiner da imagem é hover */
+}
+
+/* Classe auxiliar para esconder elementos */
+.hidden {
+    display: none; /* Esconde elementos com esta classe */
+}
+
+/* Estilo para o nome do perfil */
+.profile-name {
+    margin-bottom: 20px; /* Adiciona 20 pixels de espaçamento abaixo do nome */
+}
+
+/* Estilo para as seções do perfil */
+.general-info, .login-signup, .risk-areas, .logout {
+    margin: 10px 0; /* Adiciona 10 pixels de espaçamento acima e abaixo de cada seção */
+}
+
+/* Estilo para os links dentro das seções do perfil */
+.profile-name a, .general-info a, .login-signup a, .risk-areas a, .logout a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Define a cor do texto dos links como branco */
+    font-weight: bold; /* Deixa o texto dos links em negrito */
+    font-size: 18px; /* Define o tamanho da fonte dos links como 18 pixels */
+}
+
+.logout {
+    display: none; /* Esconde a seção de logout por padrão */
+}
+
+/* Estilo para os links ao passar o mouse sobre eles */
+.profile-name a:hover, .general-info a:hover, .login-signup a:hover, .risk-areas a:hover, .logout a:hover {
+    color: #C0C0C0; /* Muda a cor do texto dos links para cinza claro ao passar o mouse */
+}

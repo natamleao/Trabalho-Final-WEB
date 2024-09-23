@@ -1,0 +1,18 @@
+/**
+ * @license
+ * Copyright 2024 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/* Estilo opcional: Faz com que a página de exemplo preencha a janela. */
+html, body {
+  height: 100%; /* Define a altura do elemento html e body para 100% da altura da janela */
+  margin: 0 0 0 11.65%; /* Remove as margens padrão do body e aplica uma margem esquerda de 11.65% */
+}
+
+/* Desloca o ícone da bandeira para a direita para que a parte inferior do mastro da bandeira
+ * se alinhe com o ponto de ancoragem. */
+.flag-icon {
+  position: relative; /* Define o posicionamento do ícone da bandeira como relativo */
+  left: 10px; /* Move o ícone da bandeira 10 pixels para a direita */
+}

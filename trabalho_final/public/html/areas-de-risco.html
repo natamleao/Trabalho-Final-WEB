@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Áreas de Risco</title>
+        <link href="../css/styles.css" rel="stylesheet">
+        <link href="../css/areas-risco.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body> 
+        <div class="profile">
+            <div class="profile-image-container">
+                <img id="profile-image" src="../img/default-image.webp" alt="Imagem do Perfil">
+                <div class="edit-icon" id="edit-icon">
+                    <i class='bx bx-edit'></i> Editar
+                </div>
+            </div>
+    
+            <input type="file" id="file-input" accept="image/*" class="hidden">
+            <button id="upload-button" class="hidden">Enviar Imagem</button>
+
+            <div class="profile-name">
+                <h2><a href="index.html">Nome</a></h2>
+            </div>
+        
+            <div class="general-info">
+                <h3><a href="informacoes-gerais.html">Informações Gerais</a></h3>
+            </div>
+        
+            <div class="login-signup">
+                <h3><a href="../html/login-register.html">Entrar/Cadastrar</a></h3>
+            </div>
+        
+            <div class="risk-areas">
+                <h3><a href="../html/areas-de-risco.html">Áreas de Risco</a></h3>
+            </div>
+
+            <div class="logout" id="logout">
+                <h3><a href="#" id="logout-link">Sair</a></h3>
+            </div>
+        </div>
+
+            <gmp-map center="-4.945696, -37.974630" zoom="18" map-id="map">
+                <gmp-advanced-marker position="-4.946106, -37.974794" title="Area de risco">
+                    <img class="flag-icon"
+                        src="../img/aedes map.png"/>
+                </gmp-advanced-marker>
+                <gmp-advanced-marker position="-4.945050, -37.972569" title="Area de risco">
+                    <img class="flag-icon"
+                        src="../img/aedes map.png"/>
+                </gmp-advanced-marker>
+                <gmp-advanced-marker position="-4.945401, -37.975942" title="Area de risco">
+                    <img class="flag-icon"
+                        src="../img/aedes map.png"/>
+                </gmp-advanced-marker>
+            </gmp-map>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCudVd5urBJc2uY-Fs_g03bm6VS4cVcEA4&loading=async&libraries=marker&v=beta&solution_channel=GMP_CCS_complexmarkers_v3"
+            defer
+            ></script>
+        
+        <script src="../js/change-image.js"></script>
+        <script src="../js/infos-login.js"></script>
+    </body>
+</html>

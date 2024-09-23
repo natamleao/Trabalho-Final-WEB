@@ -1,0 +1,10 @@
+/* Estilo para a imagem de fundo ou outra seção à direita do perfil */
+.image {
+    width: calc(100vw - 300px); /* Define a largura da div como a largura total da visualização menos a largura do perfil (300 pixels) */
+    height: 100vh; /* Define a altura da div como a altura total da visualização (viewport) */
+    position: absolute; /* Posiciona a div absolutamente em relação ao seu contêiner pai */
+    right: 0; /* Alinha a div ao lado direito da página */
+    display: flex; /* Utiliza o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro da div */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro da div */
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo como Arial, com uma fonte alternativa sans-serif */
+    margin: 0; /* Remove as margens padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    background-color: #f4f4f4; /* Define a cor de fundo do corpo como um cinza claro */
+}
+
+.container {
+    width: 70%; /* Define a largura do contêiner como 70% da largura da tela */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    overflow: hidden; /* Oculta o conteúdo que excede os limites do contêiner */
+    display: grid; /* Define o contêiner como um grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas que se adaptam automaticamente, com um mínimo de 300px */
+    gap: 20px; /* Define o espaço entre os itens do grid como 20 pixels */
+    margin-right: 3%; /* Adiciona uma margem à direita de 3% */
+}
+
+.info-block {
+    background: #fff; /* Define o fundo do bloco de informações como branco */
+    padding: 20px; /* Adiciona um preenchimento de 20 pixels ao bloco */
+    border-radius: 8px; /* Arredonda os cantos do bloco com um raio de 8 pixels */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao bloco */
+}
+
+h1, h2 {
+    color: #000; /* Define a cor do texto dos títulos h1 e h2 como um cinza escuro */
+}
+
+p {
+    text-align: justify;
+    color: #000; /* Define a cor do texto dos parágrafos como um cinza médio */
+    line-height: 1.6; /* Define a altura da linha dos parágrafos como 1.6 vezes o tamanho da fonte */
+}
