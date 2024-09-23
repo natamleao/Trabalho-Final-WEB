@@ -4,7 +4,7 @@
 
 </div>
 
-![Página inicial do site](https://i.imgur.com/84aI44w.png)
+![Página inicial do site](https://i.imgur.com/5mkssQA.png)
 
 > [!NOTE]
 > Este projeto é um exemplo de um site informativo sobre a dengue, nele o usuário poderá se cadastrar, ver informações sobre a dengue, incluindo formas de prevenção e cuidados, também poderá ver um mapa de focos do mosquito.
@@ -19,17 +19,17 @@ Esta funcionalidade permite ao usuário se cadastrar no site.
 ### 2. Login
 Esta funcionalidade permite ao usuário entrar no site.
 
-![Página de login/cadastro do site](https://i.imgur.com/KDH49gm.png)
+![Página de login/cadastro do site](https://i.imgur.com/VknsFcO.png)
 
 ### 3. Informações gerais
 Clicando aqui o usuário poderá ver várias informações sobre a dengue.
 
-![Página de informações gerais](https://i.imgur.com/TkUGU9F.png)
+![Página de informações gerais](https://i.imgur.com/0sv63xI.png)
 
 ### 4. Áreas de risco
 Clicando aqui o usuário poderá ver o mapa de focos.
 
-![Página de áreas de risco](https://i.imgur.com/DIwhOTs.png)
+![Página de áreas de risco](https://i.imgur.com/QjL7fhd.png)
 
 ### 5. Redefinir senha
 Nesta funcionalidade o usuário poderá redefinir sua senha de usuário.
@@ -108,4 +108,4 @@ Ao passar o cursor sobre a foto de perfil aparcerá um botão de edição, clica
 * **Autores:** Antônio Arcênio Rabelo Neto, Francisco Wesley Guabiraba Ferreira, Natam Leão Ferreira
 * **Instituição:** Universidade Federal do Ceará (UFC) - Campus Russas
 * **Disciplina:** Desenvolvimento de Software para Web
-* **Data de Conclusão:** 22/09/2024
+* **Data de Conclusão:** 23/09/2024
