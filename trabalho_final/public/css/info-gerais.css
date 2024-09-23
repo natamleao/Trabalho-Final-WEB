@@ -23,10 +23,10 @@ body {
 }
 
 h1, h2 {
-    color: #333; /* Define a cor do texto dos títulos h1 e h2 como um cinza escuro */
+    color: #000; /* Define a cor do texto dos títulos h1 e h2 como um cinza escuro */
 }
 
 p {
-    color: #666; /* Define a cor do texto dos parágrafos como um cinza médio */
+    color: #000; /* Define a cor do texto dos parágrafos como um cinza médio */
     line-height: 1.6; /* Define a altura da linha dos parágrafos como 1.6 vezes o tamanho da fonte */
 }
