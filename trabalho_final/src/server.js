@@ -4,7 +4,7 @@ const cors = require('cors'); // Importa o middleware CORS para permitir requisi
 const helmet = require('helmet'); // Importa o middleware Helmet para aumentar a segurança das requisições HTTP
 const fs = require('fs'); // Importa o módulo fs para manipulação de arquivos e diretórios
 const path = require('path'); // Importa o módulo path para trabalhar com caminhos de arquivos
-const userRoutes = require('./routes/userRoutes'); // Importa as rotas definidas para os usuários (endpoints de usuários)
+const userRoutes = require('./routes/user-routes'); // Importa as rotas definidas para os usuários (endpoints de usuários)
 require('dotenv').config(); // Carrega variáveis de ambiente de um arquivo .env para a aplicação
 const app = express(); // Cria uma instância da aplicação Express
 const port = 3000; // Define a porta em que o servidor irá escutar
@@ -34,7 +34,7 @@ if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir, { recursive: true });
 }
 
-// Define as rotas para o endpoint '/api/users', utilizando as rotas importadas do arquivo userRoutes
+// Define as rotas para o endpoint '/api/users', utilizando as rotas importadas do arquivo user-routes
 app.use('/api/users', userRoutes);
 
 // Define uma rota GET para a raiz do servidor que retorna uma mensagem simples
