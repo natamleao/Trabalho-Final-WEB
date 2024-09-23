@@ -24,7 +24,7 @@ Esta funcionalidade permite ao usuário entrar no site.
 ### 3. Informações gerais
 Clicando aqui o usuário poderá ver várias informações sobre a dengue.
 
-![Página de informações gerais](https://i.imgur.com/0sv63xI.png)
+![Página de informações gerais](https://i.imgur.com/TtNME0P.png)
 
 ### 4. Áreas de risco
 Clicando aqui o usuário poderá ver o mapa de focos.
