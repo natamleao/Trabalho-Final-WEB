@@ -27,6 +27,7 @@ h1, h2 {
 }
 
 p {
+    text-align: justify;
     color: #000; /* Define a cor do texto dos parágrafos como um cinza médio */
     line-height: 1.6; /* Define a altura da linha dos parágrafos como 1.6 vezes o tamanho da fonte */
 }
